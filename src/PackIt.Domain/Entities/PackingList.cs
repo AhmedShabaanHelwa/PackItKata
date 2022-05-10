@@ -7,11 +7,11 @@ namespace PackIt.Domain.Entities
     /// </summary>
     internal class PackingList
     {
+        private string _name;
+        private string _localization;
         public Guid Id { get; private set; }
-        public string Name { get; private set; }
-        public string Localization { get; private set; }
-
+        
         public PackingList(string name, string localization)
-        => (this.Name, this.Localization) = (name, localization);
+        => (this._name, this._localization) = (name, localization);
     }
 }
