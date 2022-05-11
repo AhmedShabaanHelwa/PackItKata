@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PackIt.Domain.ValueObjects;
+using System;
 
 namespace PackIt.Domain.Entities
 {
@@ -7,11 +8,11 @@ namespace PackIt.Domain.Entities
     /// </summary>
     internal class PackingList
     {
-        private string _name;
+        private PackingListName _name;
         private string _localization;
         public Guid Id { get; private set; }
         
-        public PackingList(string name, string localization)
+        public PackingList(PackingListName name, string localization)
         => (this._name, this._localization) = (name, localization);
     }
 }
