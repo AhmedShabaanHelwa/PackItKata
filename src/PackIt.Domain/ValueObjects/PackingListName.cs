@@ -1,6 +1,7 @@
 ﻿using PackIt.Domain.Exceptions;
 using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("PackIt.Tests.Domain")]
 namespace PackIt.Domain.ValueObjects;
 
 /// <summary>
